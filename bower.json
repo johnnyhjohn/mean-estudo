@@ -1,0 +1,10 @@
+{
+  "name": "johnny",
+  "version": "0.0.1",
+  "authors": [
+    "Johnny <johnny@coffeecreations.com.br>"
+  ],
+  "description": "criando aplicacao com mean",
+  "license": "MIT",
+  "homepage": "http://www.coffeecreations.com.br"
+}

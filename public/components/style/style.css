@@ -1,0 +1,109 @@
+*{
+  text-decoration: none;
+}
+.italic{
+  font-style: italic;
+}
+.h2-pre{
+  display: inline-block;
+margin: -15px;
+padding: 0px;
+}
+.inline-block{
+  display: inline-block;
+}
+.small-pre{
+    display: inline-block;
+    width: auto;
+    position: relative;
+    top: 25px;
+}
+.azul{
+    color: rgb(13, 128, 228);
+}
+.green{
+    color: rgb(99, 197, 130);
+}
+
+section{
+  height: 100vh;
+}
+.home,.mongodb{
+  background: #e9e9e9;
+}
+.sobre-mean{
+    background-color: #444;
+    color: white;
+}
+.sobre-mean h1{
+  margin-top: 10%;
+}
+.logo-mean{
+  width: 100%;
+  margin-top: 25%;
+  margin-bottom: 5%;
+}
+.logo-mean img{
+  display: block;
+  margin: auto;
+}
+.link-anchor{
+  margin-top: 25%;
+  width: 100%;
+  text-align: center;
+}
+.sobre-mean .col-md-3{
+  text-align: center;
+}
+.sobre-mean img{
+  width: 40%;
+}
+.sobre-mean .node-logo{
+  width: 80%;
+}
+.sobre-mean p{
+  margin-bottom: 20%;
+}
+.mongo-header{
+  position: fixed;
+  background-color: rgb(78, 149, 70);
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  opacity: 0;
+  -moz-transition:all ease .3s;
+  -webkit-transition:all ease .3s;
+  transition:all ease .3s;
+}
+.header-show{
+  opacity: 1;
+  z-index: 9;
+  -moz-transition:all ease .3s;
+  -webkit-transition:all ease .3s;
+  transition:all ease .3s;
+}
+.mongo-header img{
+  left: 10%;
+  position: relative;
+  width: 5%;
+}
+.mongo-header h3{
+  display: inline-block;
+  position: relative;
+  color: white;
+  left: 10%;
+}
+.documentos-mongo{
+  background-color: #409443;
+color: white;
+}
+#mongodb-introducao h1, #comecando-mongo h1, #documentos-mongo h1, .documentos-mongo h1,.comecando-mongo h1{
+  padding-top: 10%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+#comecando-mongo, .comecando-mongo{
+  background-color: #444;
+  color: white;
+}

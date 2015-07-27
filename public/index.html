@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html ng-app="mainapp">
+  <head>
+    <meta charset="utf-8">
+    <title>Mean Stack</title>
+    <script src="components/angularjs/angular.js"></script>
+    <script src="components/Jquery/dist/jquery.js"></script>
+    <script src="javascript/controllers/post.js"></script>
+    <script src="components/script/script.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="components/style/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="components/font-awesome/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <section class="home">
+      <div class="container">
+        <div class="logo-mean">
+          <img src="images/meanlogo.png" alt="Mean Logo" />
+        </div>
+        <h1 class="text-center">MEAN</h1>
+        <p class="text-center">
+          Página de Estudo e Introdução de MEAN!
+        </p>
+        <div class="link-anchor">
+          <a href="#introducao">Continuar</a>
+        </div>
+      </div>
+    </section>
+    <section id="introducao" class="sobre-mean">
+      <div class="container">
+        <h1 class="text-center">O QUE É MEAN?</h1>
+        <p class="text-center">"MEAN" é um conjunto de soluções Javascript, elas são:</p>
+        <div class="col-md-3">
+          <img src="images/mongologo.png" alt="" />
+          <h2 class="text-align">MongoDB</h2>
+        </div>
+        <div class="col-md-3">
+          <img src="images/expresslogo.png" alt="" />
+          <h2 class="text-align">ExpressJS</h2>
+        </div>
+        <div class="col-md-3">
+          <img src="images/angularlogo.png" alt="" />
+          <h2 class="text-align">AngularJS</h2>
+        </div>
+        <div class="col-md-3">
+          <img class="node-logo" src="images/nodelogo.png" alt="" />
+          <h2 class="text-align">Node.js</h2>
+        </div>
+        <div class="col-md-12 link-anchor">
+          <a href="#mongodb">Continuar</a>
+        </div>
+      </div>
+    </section>
+    <section id="mongodb" class="mongodb">
+      <div class="container">
+        <div class="logo-mean">
+          <img src="images/mongologo.png" alt="" />
+        </div>
+        <h1 class="text-center">Mongo DB</h1>
+        <p class="text-center">
+          O MongoDB é um dos bancos NoSQL mais usados atualmente pela sua facilidade de instalação, documentação e os divesos drivers para inúmeras linguagens de programação.
+        </p>
+        <div class="link-anchor">
+          <a href="#mongodb-introducao">Continuar</a>
+        </div>
+      </div>
+    </section>
+    <section id="mongodb-introducao" class="mongodb">
+      <div class="container">
+        <div class="mongo-header">
+          <img src="images/mongologo.png" alt="" />
+          <h3>MongoDB</h3>
+        </div>
+        <h1 class="text-left">Entendendo Bancos NoSQL</h1>
+        <p class="text-left">
+          Para compreendermos o MongoDB é bom sabermos o que são e como trabalham bancons não relacionais(NoSQL).
+        </p>
+        <h2>O que são Bancos não relacionais?</h2>
+        <p>
+          Bancos não relacionais são aqueles que não possuem tablas entre si, como por exemplo PostgreSQL, MYSQL, Oracle utilizam. Existem muitos tipos de banco de dados não
+          relacionados ou NoSQL, como:
+        </p>
+        <ul>
+          <li>Casandra</li>
+          <li>Caché</li>
+          <li>OrientDB</li>
+          <li>SimpleDB</li>
+          <li>MongoDB</li>
+        </ul>
+        <p class="text-left">
+          Na mesma categoria do MongoDB temos também mais bancos orientados a documentos, o RavenDB, o CouchDB, o MarkLogic Server, o BaseX e o eXist.
+        </p>
+        <p class="text-left">
+          Para quem já conhece javascript, o MongoDB será de fácil compreensão, pois ele usa a sintaxe de JSON.
+        </p>
+        <p>
+          Por Exemplo:
+        </p>
+        <pre>
+          {
+            "nome":"Bognar Junior",
+            "escolaridade":"Pós-Graduação incompleto",
+            "time":"Corinthians"
+          }
+        </pre>
+        <p>
+          Segundo o site do mongo existem mais de 750 parceiros, incluindo as gigantes Microsoft, IBM e Amazon.
+        </p>
+        <div class="link-anchor">
+          <a href="#introducao">Continuar</a>
+        </div>
+      </div>
+    </section>
+    <section id="documentos-mongo" class="documentos-mongo">
+      <div class="container">
+        <h1>SCHEMALESS</h1>
+        <br><br>
+        <p>
+          O que significa ser livre de esquema? Basicamente, é não precisar ter nenhum objeto identificando como será nosso modelo de persistência, ou seja,
+          não terá nada dizendo os campos, nem seus tipos.
+        </p>
+        <p>
+          E isso é bom? Dependendo do que você quer fazer sim, ele te dá maior liberdade para futuras modificações e maiores possibilidades de modelagem em comparação à
+          relacional.
+        </p>
+      </div>
+      <div class="container">
+        <h1>JSON/BSON</h1>
+        <p>
+          MongoDB armazena tudo em documentos, que são estrutura de dados no estilo JSON, criando assim um formato único de troca de dados em toda stack MEAN.
+        </p>
+        <pre>{ "item": "pencil", "qty": 500, "type": "no.2" }</pre>
+        <p>O BSON nada mais é que uma versão binária do JSON. Ele possui diversos tipos.</p>
+        <p>MongoDB usa o BSON para estender o modelo de JSON para fornecer tipos de dados adicionais e para ser eficiente na codificação e decodificação em diferentes
+         idiomas db.teste.insert(json)</p>
+      </div>
+      <div class="container">
+        <h1>SHARDING</h1>
+        <p>
+          O sharding é um mecanismo de distribuição de dados entre os servidores para persistir grandes volumes de dados.
+        </p>
+        <p>
+          Quando uma coleção começar a atingir o limite daquele servidor, você poderá adicionar outro servidor e colocar essa coleção como sharding para que ela distribua
+          uma quantidade de seus dados para esse outro servidor ou servidores.
+        </p>
+        <p>
+          Os Config Servers são servidores que armazenam os dados sobre o cluster e que são consultados pelo mongos, nosso router, para saber onde buscar a informação
+          requisitadas pelo mongos que será a porta de entrada de qualquer requisição no cluster.
+        </p>
+      </div>
+    </section>
+    <section class="documentos-mongo">
+      <div class="container">
+        <h1>REPLICA</h1>
+        <p>
+          Possuímos réplicas em vários bancos relácionais também, o que ele faz?
+        </p>
+        <p class="italic">
+          Ele apenas faz o espelhamento dos dados de um servidor para o outro.
+        </p>
+        <p>
+          No MongoDB funciona da mesma forma, porém podemos replicar também os shardings.
+        </p>
+        <p>
+          A ideia por trás de replicar os shardings nos remete ao conceito largamente utilizado pelo MongoDB que é a alta disponibilidade.
+        </p>
+        <p>
+          <br>
+          Um exemplo:
+        </p>
+        <p>
+          Se um servidor rodando uma instância de sharding e uma de replica, porém a replica é de um sharding externo àquele servidor, quando ele cair
+           derrubará apenas um sharding que terá sua replica em outro servidor, podendo levantar um novo servidor com os dados do servidor que caiu.
+        </p>
+        <h1>GRIDFS</h1>
+        <p>
+          É o sistema de armazenamento de arquivos binários do MongoDB, com ele você poderá distribuir seus arquivos binários pelos seus servidores, dando assim alta disponibilidade
+           de acesso a eles.
+        </p>
+      </div>
+    </section>
+    <section id="comecando-mongo" class="comecando-mongo">
+      <div class="container">
+        <h1>Começando com MongoDB</h1>
+        <div class="col-md-12">
+          <h2>Criando seu banco</h2>
+          <p>
+            Não é nada tão complexo para você criar seu banco no mongoDB. Pode-se usar este comando para trocar de Banco também.
+          </p>
+          <pre>  >use nome_do_banco </pre>
+          <p>
+            Para verificar a base de dados selecionada usa o comando <b>db</b> (sim, apenas isso).
+          </p>
+          <pre> > db
+mean </pre>
+          <p>
+            Para listar todos os bancos que você tem, basta usar o <b>show dbs</b>.
+          </p>
+          <pre>  > show dbs
+local  0.078GB
+mean   0.078GB
+test   0.078GB</pre>
+          <h2>Deletando uma base</h2>
+          <p>Todos devem conhecer o comando SQL <b>"Drop"</b>. Se não conhecem, ele é um comando SQL comum para deletar algo.</p>
+          <p>No MongoDB não difere o comando para deletar sua base de Dados é <b>db.dropDatabase()</b>.</p>
+          <p>Este comando já irá deletar sua base de dados selecionada, muito cuidado pois não tem <b>CASCADE</b>, e você executou este comando, já era TUDO.</p>
+          <pre>db.dropDatabase()</pre>
+          <h2>Criar uma coleção</h2>
+
+          <pre>db.createCollection('nome_coleção',options)</pre>
+        </div>
+
+      </div>
+    </section>
+    <section class="comecando-mongo">
+      <div class="container">
+        <h1>Inserindo no MongoDB</h1>
+        <p>
+          Perceba que a sintaxe de um comando no mongoDB é
+        </p>
+        <pre>database.coleção.função()</pre>
+        <p class="inline-block">
+          O metodo  </p><pre class="small-pre">db.nome_banco.insert()</pre>
+        <p class="inline-block">
+           . Serve para adicionar um documento a sua coleção.
+        </p>
+        <p>
+          <br>
+          Vamos ver como ficaria uma inserção em uma coleção chamada <span class="italic">usuarios</span> :
+        </p>
+        <pre>db.<span class="green">usuarios</span>.<span class="azul">insert</span>(
+    {
+      nome: "Johnny",           <-----> Campo : Valor
+      idade: 19,                <-----> Campo : Valor
+      status: true              <-----> Campo : Valor
+    }
+)</pre>
+        <p>
+          O comando anterios é a mesma consulta que seria no SQL assim:
+        </p>
+        <pre>INSERT INTO <span class="green"> usuarios(nome, idade, status)</span> VALUES ("Johnny",19,true)</pre>
+        <h3>E PARA INSERIR MAIS DE UM DOCUMENTO?</h3>
+        <p>
+          Não se preocupe pequeno gafanhoto do MEAN. Basta inserir igual você cria uma array com JSON.
+        </p>
+        <pre>db.<span class="green">usuarios</span>.<span class="azul">insert</span>(
+  [
+    {nome: "Johnny", idade: 19, status: true },
+    {nome: "Joao", idade: 20, status: false },
+    {nome: "Maria", idade: 16, status: true }
+  ]
+)</pre>
+      </div>
+    </section>
+    <section class="documentos-mongo">
+      <div class="container">
+        <h1>Seletor no MongoDB</h1>
+        <p class="inline-block">O método : </p><pre class="small-pre">db.nome_banco.find(query,projection)</pre>
+        <p class="inline-block">
+           . Serve para selecionar documentos de sua coleção e retorna um cursor para os documentos selecionados.
+        </p>
+        <p>
+          Vamos ver como ficaria a seleção deste método em uma coleção chamada <span class="italic">posts</span>
+        </p>
+              <pre>> db.<span class="green">posts</span>.<span class="azul">find()</span>
+      { "_id" : ObjectId("55a9f52022873068da373c39"), "title" : "Post 1", "content" : "Lorem ipsum", "tags" : [ ], "likes" : 10 }
+      { "_id" : ObjectId("55ac2da75785a313605bf745"), "title" : "Post 2", "content" : "Lorem ipsum 2", "tags" : [ ], "likes" : 10 }</pre>
+      <p class="inline-block">
+        Como pode ver este método foi igual usar um </p> <pre class="small-pre">SELECT * FROM <span class="azul"> POSTS</span></pre> em um banco SQL relacional.
+      </p>
+        <h3>MAS E COMO FAZER BUSCAS ESPECIFICAS??</h3>
+        <p>Calma novamente gafanhoto, esta muito nervoso.</p>
+        <p>
+          Basta apenas colocar os parâmetro que quer no método. Deste jeito:
+        </p>
+        <pre> db.<span class="green">posts</span>.<span class="azul">find</span>({title:"Post 1"})
+      { "_id" : ObjectId("55a9f52022873068da373c39"), "title" : "Post 1", "content" : "Lorem ipsum", "tags" : [ ], "likes" : 10 }</pre>
+      <p>
+        E VOALÁ, ai esta seu select apenas onde o title for "Post 1".
+      </p>
+      <h3>Mas eu quero apenas os likes do Post 1, e agora?</h3>
+      <p>
+        Coisa simples, basta injetar especificamente o que quer, assim:
+      </p>
+      <pre> db.<span class="green">posts</span>.<span class="azul">find</span>({title:"Post 1"},{likes:1})
+{ "_id" : ObjectId("55a9f52022873068da373c39"), "likes" : 10 }</pre>
+      <p>
+        Aqui fizemos a mesma coisa que no SQL ficaria assim:
+      </p>
+      <pre>SELECT <span class="azul">LIKES</span> FROM POSTS WHERE <span class="green">TITLE = "Post 1"</span></pre>
+      <p>
+        O numero "1" do likes, seria booleano, ou seja, se eu colocasse "0" me referiria a false, e traria todos os resultados de "POST 1 " que não fossem
+        "likes".
+      </p>
+      </div>
+    </section>
+  </body>
+</html>
